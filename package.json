@@ -1,0 +1,7 @@
+{
+  "name": "ls_real_project",
+  "devDependencies": {
+    "browser-sync": "^2.10.0",
+    "gulp": "^3.9.0"
+  }
+}

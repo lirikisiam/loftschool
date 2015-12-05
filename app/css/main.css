@@ -1,0 +1,204 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	font: 15px/18px 'open_sansregular', Arial, sans-serif;
+	background: url('../img/body_bg.jpg') 0 95px repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.img-responsive {
+	max-width: 100%;
+	height: auto;
+}
+
+.card-head {
+	color: #EEEDEC;
+	font-size: 24px;
+	font-family: 'open_sanssemibold';
+	text-shadow: 0 1px 0 #666565;
+	height: 56px;
+	line-height: 56px;
+	padding-left: 44px;
+	margin: 0;
+	background-color: #727070;
+	background-image: -moz-linear-gradient(bottom, #7B7878 0%, #7B7878 0%, #A9A8A8 100%);
+	background-image: -o-linear-gradient(bottom, #7B7878 0%, #7B7878 0%, #A9A8A8 100%);
+	background-image: -webkit-linear-gradient(bottom, #7B7878 0%, #7B7878 0%, #A9A8A8 100%);
+	background-image: linear-gradient(to top, #7B7878 0%, #7B7878 0%, #A9A8A8 100%);
+	border: 1px solid #C3C2C2;
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.icon {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.icon-add_project {
+    width: 53px;
+    height: 56px;
+    background-position: -5px -5px;
+}
+
+.icon-auth_email {
+    width: 23px;
+    height: 17px;
+    background-position: -68px -5px;
+}
+
+.icon-auth_pass {
+    width: 22px;
+    height: 20px;
+    background-position: -101px -5px;
+}
+
+.icon-close {
+    width: 14px;
+    height: 14px;
+    background-position: -133px -5px;
+}
+
+.icon-cloud {
+    width: 58px;
+    height: 47px;
+    background-position: -157px -5px;
+}
+
+.icon-cont_arrow {
+    width: 10px;
+    height: 37px;
+    background-position: -68px -62px;
+}
+
+.icon-cont_email {
+    width: 17px;
+    height: 13px;
+    background-position: -88px -62px;
+}
+
+.icon-cont_skype {
+    width: 20px;
+    height: 20px;
+    background-position: -115px -62px;
+}
+
+.icon-cont_tel {
+    width: 17px;
+    height: 22px;
+    background-position: -145px -62px;
+}
+
+.icon-edu_begin {
+    width: 53px;
+    height: 55px;
+    background-position: -172px -62px;
+}
+
+.icon-edu_high {
+    width: 53px;
+    height: 55px;
+    background-position: -5px -127px;
+}
+
+.icon-edu_kurs {
+    width: 53px;
+    height: 55px;
+    background-position: -68px -127px;
+}
+
+.icon-exp {
+    width: 53px;
+    height: 55px;
+    background-position: -131px -127px;
+}
+
+.icon-facebook {
+    width: 42px;
+    height: 44px;
+    background-position: -225px -5px;
+}
+
+.icon-facebook:hover {
+    width: 42px;
+    height: 44px;
+    background-position: -235px -59px;
+}
+
+.icon-github {
+    width: 42px;
+    height: 44px;
+    background-position: -235px -113px;
+}
+
+.icon-github:hover {
+    width: 42px;
+    height: 44px;
+    background-position: -194px -167px;
+}
+
+.icon-locked {
+    width: 19px;
+    height: 22px;
+    background-position: -246px -167px;
+}
+
+.icon-twitter {
+    width: 42px;
+    height: 44px;
+    background-position: -5px -221px;
+}
+
+.icon-twitter:hover {
+    width: 42px;
+    height: 44px;
+    background-position: -57px -221px;
+}
+
+.icon-unlocked {
+    width: 24px;
+    height: 22px;
+    background-position: -109px -199px;
+}
+
+.icon-vk {
+    width: 42px;
+    height: 44px;
+    background-position: -143px -221px;
+}
+
+.icon-vk:hover {
+    width: 42px;
+    height: 44px;
+    background-position: -195px -221px;
+}
+
