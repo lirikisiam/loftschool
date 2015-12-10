@@ -22,7 +22,11 @@
         margin: 10px 0;
         font-size: 0;
         line-height: 0;
+        width: 95px;
     }
+        .logo img{
+            width: 100%
+        }
 
 	.header__social {
 		float: right;
@@ -70,10 +74,10 @@
     }
 
     .aside-menu__item {
-        height: 56px;
+        min-height: 56px;
         display: block;
-        line-height: 56px;
-        padding-left: 28px;
+        line-height: 22px;
+        padding: 16px 28px;
         text-decoration: none;
         text-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
         color: #727070;
@@ -116,16 +120,18 @@
         -webkit-box-shadow: 0 2px 1px rgba(9, 9, 9, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.3);
         box-shadow: 0 2px 1px rgba(9, 9, 9, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.3);
     }
-
+    
+    .aside__section {
+        margin-bottom: 34px;
+    }
     .aside__head {
-        height: 43px;
+        min-height: 43px;
         color: #D0982C;
         font-size: 20px;
         font-family: 'open_sanssemibold';
-        padding-left: 28px;
-        margin-top: 34px;
+        padding: 10px 28px;
         margin-bottom: 0;
-        line-height: 43px;
+        line-height: 22px;
         text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
         background-color: #FFFBF9;
         background-image: -moz-linear-gradient(bottom, #DCB15D 0%, #F4CC7E 89%, #F4CC7E 90%, #F4CC7E 100%);
@@ -140,9 +146,9 @@
 
     .contacts__item {
         position: relative;
-        height: 37px;
-        line-height: 37px;
-        padding-left: 18px;
+        min-height: 37px;
+        line-height: 17px;
+        padding: 10px 18px 10px 96px;
         background-color: #FBFBFB;
         background-image: -moz-linear-gradient(bottom, rgba(233, 231, 231, 0.2) 0%, rgba(251, 249, 249, 0) 100%);
         background-image: -o-linear-gradient(bottom, rgba(233, 231, 231, 0.2) 0%, rgba(251, 249, 249, 0) 100%);
@@ -167,28 +173,41 @@
         box-shadow: inset 0 2px 2px rgba(114, 112, 112, 0.1), 0 0 1px rgba(255, 255, 255, 0.15);
 
     }
-        .contacts__item:before {
-            content:"";
+
+        .contacts__item::before {
+            content: " ";
             display: block;
             position: absolute;
-            left: 48px;
-            top: 0;
-            width: 10px;
-            height: 37px;
-            background: url(../img/spritesheet.png) -68px -62px;
+            width: 58px;
+            height: 40px;
+            left: 0;
+            top:50%;
+            margin-top: -19px;
         }
+        .mail-icon::before {
+             background: url(../img/icons/cont_1.png) 15px center no-repeat;
+        }
+        .tel-icon::before {
+             background: url(../img/icons/cont_2.png) 15px center no-repeat;
+        }
+        .skype-icon::before {
+             background: url(../img/icons/cont_3.png) 15px center no-repeat;
+        }
+       
 
         .cont-mail,
         .cont-tel, 
         .cont-skype{
-            color:  #727070;
+            color: #727070;
             font-size: 14px;
             font-weight: 400;
-            text-decoration: none;
+            text-decoration: none;            
         }
-        .cont-mail {
-            text-decoration: underline;
-        }
+            .cont-mail:hover,
+            .cont-tel:hover, 
+            .cont-skype:hover{
+                text-decoration: underline;
+            }
 
         .contacts__item .icon {
             display: inline-block;
@@ -216,7 +235,7 @@
     width: 100%;
 }
     .footer__container {
-        padding-top: 21px;  
+        padding: 21px 50px 21px 270px;  
         margin: 0 auto;
         width: 1190px;
     }
@@ -229,7 +248,6 @@
             color: #9C9C9C;
             font-size: 14px;
             padding-left: 27px;
-            margin-left: 290px;
             font-weight: 700;
             text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
             text-decoration: none;

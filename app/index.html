@@ -3,6 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Welcome to My Pesonal Site</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=8">
+	<meta name="description" content="Страница frontent-девелопера">
+	<meta name="keywords" content="frontend">
+	<link href="favicon.ico" rel="icon" type="image/x-icon" />
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -13,33 +17,35 @@
 <div class="wrapper">
 	<header class="header">
 		<div class="header__container">
-			<a href="" class="logo">
-				<img src="img/logo.png" alt="My personal site logo">
+			<a href="./" class="logo">
+				<img src="img/logo.png" alt="My personal site logo" title="My personal site">
 			</a>
 			<ul class="header__social">
-				<li class="social__item icon icon-facebook"><a href="/" ></a></li>
-				<li class="social__item icon icon-vk"><a href="/" ></a></li>
-				<li class="social__item icon icon-twitter"><a href="/" ></a></li>
-				<li class="social__item icon icon-github"><a href="/" ></a></li>
+				<li class="social__item icon icon-facebook"><a href="/" target="_blank"></a></li>
+				<li class="social__item icon icon-vk"><a href="/" target="_blank"></a></li>
+				<li class="social__item icon icon-twitter"><a href="/" target="_blank"></a></li>
+				<li class="social__item icon icon-github"><a href="/" target="_blank"></a></li>
 			</ul>
 		</div>
 	</header>
 	<div class="page clearfix">
 		<aside class="aside">
-			<nav>
+			<nav class="aside__section">
 				<ul class="aside__menu">
-					<li><a href="" class="aside-menu__item first active">Обо мне</a></li>
-					<li><a href="" class="aside-menu__item">Мои Работы</a></li>
-					<li><a href="" class="aside-menu__item last">Обратная связь</a></li>
+					<li><a href="./" class="aside-menu__item first active">Обо мне</a></li>
+					<li><a href="/" class="aside-menu__item">Мои Работы</a></li>
+					<li><a href="/" class="aside-menu__item last">Обратная связь</a></li>
 				</ul>
 			</nav>
 			
-			<h2 class="aside__head">Контакты</h2>
-			<ul class="contacts">
-				<li class="contacts__item"><i class="icon icon-cont_email"></i><a href="mailto:tk.kirill@gmail.com" class="cont-mail">tk.kirill@gmail.com</a></li>
-				<li class="contacts__item"><i class="icon icon-cont_tel"></i><a href="tel:+3823323322" class="cont-tel">+3823323322</a></li>
-				<li class="contacts__item last"><i class="icon icon-cont_skype"></i><a href="skype:lirikisiam" class="cont-skype">lirikisiam</a></li>
-			</ul>
+			<div class="aside__section">
+				<h2 class="aside__head">Контакты</h2>
+				<ul class="contacts">
+					<li class="contacts__item mail-icon"><a href="mailto:tk.kirill@gmail.com" class="cont-mail">tk.kirill@gmail.com</a></li>
+					<li class="contacts__item tel-icon"><a href="tel:+3823323322" class="cont-tel">+3823323322</a></li>
+					<li class="contacts__item last skype-icon"><a href="skype:lirikisiam" class="cont-skype">lirikisiam</a></li>
+				</ul>
+			</div>
 		</aside>
 		<main class="content">
 			<section class="card main-info">

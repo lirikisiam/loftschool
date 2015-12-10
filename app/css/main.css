@@ -37,9 +37,9 @@ a:hover {
 	font-size: 24px;
 	font-family: 'open_sanssemibold';
 	text-shadow: 0 1px 0 #666565;
-	height: 56px;
-	line-height: 56px;
-	padding-left: 44px;
+	min-height: 56px;
+	line-height: 26px;
+	padding: 14px 44px;
 	margin: 0;
 	background-color: #727070;
 	background-image: -moz-linear-gradient(bottom, #7B7878 0%, #7B7878 0%, #A9A8A8 100%);
