@@ -23,6 +23,17 @@ ul {
 	margin: 0;
 }
 
+label {
+    display: block;
+    color: #727070;
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.text-center {
+    text-align: center;
+}
+
 a:hover {
 	text-decoration: none;
 }
