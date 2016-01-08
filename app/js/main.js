@@ -1,6 +1,7 @@
 /*
 		Modals
- */
+*/
+
 ;(function($) {
         $(function() {
             $('#modal').bind('click', function(e) {
