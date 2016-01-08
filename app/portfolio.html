@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="css/layout.css">
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/portfolio.css">
+	<link rel="stylesheet" href="css/form.css">
 </head>
 <body>
 <div class="wrapper">
@@ -33,9 +34,9 @@
 		<aside class="aside">
 			<nav class="aside__section">
 				<ul class="aside__menu">
-					<li><a href="./" class="aside-menu__item first">Обо мне</a></li>
-					<li><a href="/portfolio.html" class="aside-menu__item active">Мои Работы</a></li>
-					<li><a href="feedback.html" class="aside-menu__item last">Обратная связь</a></li>
+					<li><a href="./index.html" class="aside-menu__item first">Обо мне</a></li>
+					<li><a href="./" class="aside-menu__item active">Мои Работы</a></li>
+					<li><a href="./feedback.html" class="aside-menu__item last">Обратная связь</a></li>
 				</ul>
 			</nav>
 			
@@ -99,7 +100,7 @@
 							
 						</li>
 						<li class="works__item-wrap add-work">
-							<a href="/" class="add-work__link">
+							<a href="#" class="add-work__link" id="modal">
 								<i class="icon icon-add_project"></i>
 								Добавить работу
 							</a>
@@ -119,6 +120,40 @@
 		</div>
 	</footer>
 </div>
+<div class="modal">
+	<button class="modal__close b-close">×</button>
+	<form action="./" method="post" class="modal__form">
+		<div class="field-wrap no-mrg">
+			<label for="proj-name">Название проекта</label>
+			<input type="text" name="name" class="field-wrap__item" id="projName" placeholder="Введите название">
+		</div>
+		<div class="field-wrap">
+			<label for="proj-file">Картинка проекта</label>
+			<div class="file-btn-holder">
+				<input type="file" name="proj-file" class="proj-file" id="projFile">
+				<input type="text" class="" id="file-path" placeholder="Загрузите изображение">
+				<button class="proj-file-btn">
+					<i class="icon icon-cloud"></i>
+				</button>
+			</div>
+		</div>
+		<div class="field-wrap">
+			<label for="proj-url">URL проекта</label>
+			<input type="text" name="proj-url" class="field-wrap__item" id="projUrl" placeholder="Добавьте ссылку">
+		</div>
+		<div class="field-wrap">
+			<label for="proj-description">Описание</label>
+			<textarea name="proj-description" class="field-wrap__item " id="proj-description" placeholder="Пара слов о Вашем проекте"></textarea>
+		</div>
+		<div class="field-wrap text-center">
+			<input type="submit" class="btn-add" value="Добавить">
+		</div>
 
+	</form>
+</div>
+<script src="bower/jquery/dist/jquery.min.js"></script>
+<script src="bower/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="bower/bPopup/jquery.bpopup.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
